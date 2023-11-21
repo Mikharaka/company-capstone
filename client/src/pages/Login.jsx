@@ -12,7 +12,7 @@ const Login = () => {
   })
 
   const loginUser = async (e) => {
-    e.preventDefault
+    e.preventDefault()
     const{email, password} = data
     try {
       const {data} = await axios.post('/login', {
@@ -23,7 +23,7 @@ const Login = () => {
         toast.error(data.error)
       }else{
         setData({});
-        navigate('/')
+        navigate('/dashboard')
       }
     } catch (error) {
       
