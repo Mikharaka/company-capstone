@@ -33,13 +33,21 @@ const Register = () => {
   return (
     <div>
       <form onSubmit={registerUser}>
-        <label>Name</label>
-        <input type="text" placeholder='enter name...' value={data.name} onChange={(e) => setData({...data, name: e.target.value})} />
-        <label>Email</label>
-        <input type="email" placeholder='enter email...' value={data.email} onChange={(e) => setData({...data, email: e.target.value})} />
-        <label>Password</label>
-        <input type="password" placeholder='enter password...' value={data.password} onChange={(e) => setData({...data, password: e.target.value})}/>
-        <button type='submit'>Submit</button>
+        <div className='mt-4'>
+          <label className='mr-10'>Name</label>
+          <input type="text" placeholder='enter name...' value={data.name} onChange={(e) => setData({...data, name: e.target.value})} />
+        </div>
+        <div className='mt-2'>
+          <label className='mr-10'>Email</label>
+          <input type="email" placeholder='enter email...' value={data.email} onChange={(e) => setData({...data, email: e.target.value})} />
+        </div>
+        <div className='mt-2'>
+          <label className='mr-2'>Password</label>
+          <input type="password" placeholder='enter password...' value={data.password} onChange={(e) => setData({...data, password: e.target.value})}/>
+        </div>
+        <div>
+          <button type='submit' className='rounded-full mt-2'>Submit</button>
+        </div>
       </form>
     </div>
   )
