@@ -3,7 +3,7 @@ const { hashPassword, comparePassword} = require('../helpers/auth')
 const jwt = require('jsonwebtoken')
 
 const test = (req, res) => {
-    res.json('test is workingz')
+    res.json('test is working')
 }
 
 // REGISTER
