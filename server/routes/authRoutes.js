@@ -7,7 +7,7 @@ const { test, registerUser, loginUser, getProfile } = require('../controllers/au
 router.use(
     cors({
         credentials:true,
-        origin: 'http://34.128.115.34:5173'
+        origin: 'http://34.150.89.69:5173'
     })
 )
 
