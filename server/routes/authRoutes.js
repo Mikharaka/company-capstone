@@ -7,7 +7,7 @@ const { test, registerUser, loginUser, getProfile } = require('../controllers/au
 router.use(
     cors({
         credentials:true,
-        origin: 'http://34.150.89.69:5173'
+        origin: 'http://wowrack-parking.ddns.net'
     })
 )
 
