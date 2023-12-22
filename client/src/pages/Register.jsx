@@ -33,7 +33,7 @@ const Register = () => {
   return (
     <div>
       <form onSubmit={registerUser}>
-        <div className='mt-4'>
+        <div className='mt-8'>
           <label className='mr-10'>Name</label>
           <input type="text" placeholder='enter name...' value={data.name} onChange={(e) => setData({...data, name: e.target.value})} />
         </div>

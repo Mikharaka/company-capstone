@@ -33,7 +33,7 @@ const Login = () => {
   return (
     <div className='mt-4'>
       <form onSubmit={loginUser}>
-        <div className='mt-2'>
+        <div className='mt-8'>
           <label className='mr-10'>Email</label>
           <input type="email" placeholder='enter email...'value={data.email} onChange={(e) => setData({...data, email: e.target.value})} />
         </div>

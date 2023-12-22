@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -77,8 +78,8 @@ button:focus-visible {
   right: 0;
   z-index: 1;
   display: block;
-  background: linear-gradient(rgba(33,33,33,0.9), rgba(33,33,33,0.7)),
-    url("https://www.wowrack.co.id/images/data-center.jpg");
+  background: linear-gradient(rgba(33,33,33,0.9), rgba(33,33,33,0.3)),
+    url("https://www.wowrack.co.id/images/background.png");
   height: 800px;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,6 +96,4 @@ button:focus-visible {
   left: 0;
   right: 0;
   z-index: 9999;
-  margin-left: 20px;
-  margin-right: 20px;
 }
